@@ -9,6 +9,9 @@
 <h3 align="center">
   💬 Gifted Chat
 </h3>
+<p>
+  This is a fork original library <a target="_blank" href="https://github.com/FaridSafi/react-native-gifted-chat">react-native-gifted-chat</a>
+</p>
 <p align="center">
   The most complete chat UI for React Native & Web
 </p>

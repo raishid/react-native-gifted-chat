@@ -1,6 +1,6 @@
 {
   "name": "@raishid/react-native-gifted-chat",
-  "version": "2.6.7",
+  "version": "2.6.8",
   "description": "The most complete chat UI for React Native",
   "keywords": [
     "android",
@@ -12,13 +12,13 @@
     "message",
     "chat"
   ],
-  "homepage": "https://github.com/FaridSafi/react-native-gifted-chat#readme",
+  "homepage": "https://github.com/raishid/react-native-gifted-chat#readme",
   "bugs": {
-    "url": "https://github.com/FaridSafi/react-native-gifted-chat/issues"
+    "url": "https://github.com/raishid/react-native-gifted-chat/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FaridSafi/react-native-gifted-chat.git"
+    "url": "git+https://github.com/raishid/react-native-gifted-chat.git"
   },
   "license": "MIT",
   "author": "Farid Safi",

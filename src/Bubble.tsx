@@ -139,6 +139,7 @@ export interface BubbleProps<TMessage extends IMessage> {
   previousMessage?: TMessage
   optionTitles?: string[]
   containerStyle?: LeftRightStyle<ViewStyle>
+  styleWraperBubble?: LeftRightStyle<ViewStyle>
   wrapperStyle?: LeftRightStyle<ViewStyle>
   textStyle?: LeftRightStyle<TextStyle>
   bottomContainerStyle?: LeftRightStyle<ViewStyle>
@@ -206,6 +207,7 @@ export default class Bubble<
     usernameStyle: {},
     containerToNextStyle: {},
     containerToPreviousStyle: {},
+    styleWraperBubble: {},
   }
 
   static propTypes = {
@@ -248,6 +250,10 @@ export default class Bubble<
       right: StylePropType,
     }),
     containerToPreviousStyle: PropTypes.shape({
+      left: StylePropType,
+      right: StylePropType,
+    }),
+    styleWraperBubble: PropTypes.shape({
       left: StylePropType,
       right: StylePropType,
     }),
@@ -551,7 +557,7 @@ export default class Bubble<
   }
 
   render () {
-    const { position, containerStyle, wrapperStyle, bottomContainerStyle } =
+    const { position, containerStyle, wrapperStyle, bottomContainerStyle, styleWraperBubble } =
       this.props
     return (
       <View
@@ -574,7 +580,7 @@ export default class Bubble<
             accessibilityRole='text'
             {...this.props.touchableProps}
           >
-            <View>
+            <View style={styleWraperBubble && styleWraperBubble[position]}>
               {this.renderBubbleContent()}
               <View
                 style={[
